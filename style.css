@@ -109,13 +109,17 @@ body{
 	color: var(--nero);
 	line-height: 1.6;
 	background-color:var(--rosso);
+	
 }
 .page{
 	background-color: var(--bianco);
 	background-image: url(img/texture-30.png);
 	background-repeat: repeat;	
-
 }
+.index{
+	overflow-y: hidden;
+}
+
 
 .flex{
 	display: flex;
@@ -262,8 +266,16 @@ a{
 	overflow: hidden;
 	*/
 	}
-	.eye:hover{
-		animation: eye 1s ease-in-out forwards infinite alternate ;
+
+  .wrap-ball{
+	  position: relative;
+	  width: 10rem;
+	  height: 6rem;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);	
+	  border-radius: 70% 50% 0 0;
+		overflow: hidden; 
 	}
   
   .ball{
@@ -281,16 +293,26 @@ a{
 	}
 
 button{
-	margin: 8rem 0 8rem;
+	margin: 5rem 0 0 0;
 	border-radius: 0.6rem;
 	border-style: none;
 	background-color: var(--nero);
 	font-family: "Integral";
 	font-size: 2rem;
+	white-space: nowrap;
 	font-weight: 800;
 	color: var(--bianco);
 	padding: 2rem 4rem;
 	cursor: pointer;
+}
+.variant{
+	background-color: var(--bianco);
+	color: var(--rosso-variant);
+}
+.variant:hover{
+	background-color: var(--rosso-variant);
+	color: var(--bianco);
+	transition: 0.3s;
 }
 
 .invisible{
@@ -303,6 +325,9 @@ button{
 	padding: 1rem 3rem;
 }
 
+#home-btn{
+	padding: 2rem
+}
 
 .classic:hover{
 	background-color: var(--rosso-variant);
@@ -312,7 +337,8 @@ button{
 
 
 .profile-section{
-	grid-template-rows:1fr 8fr 1fr 0.4fr 2fr;	
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows:1fr 8fr 1fr 1fr;	
 	margin-top: 5rem;
 }
 
@@ -355,7 +381,7 @@ button{
 
 .aw-img{
 	width: 100%;
-	height: 20rem;
+	height: 40rem;
 	object-fit: cover;
 }
 
@@ -392,18 +418,20 @@ button{
 .wrap-num{
 	background-image: url(img/assets/profile/black-gb.png);
 	background-repeat: no-repeat;
-	height: 6.6rem;
+	background-size: contain;
+	height: 4rem;
 	
 }
 .number{
 	font-size: 2.5rem;
-	transform: translate(4.8rem, 1rem);
 	color: var(--bianco);
-
+	transform: translate(2rem, -0.3rem);
 }
 .descrizione{
 	text-transform: none;
+	line-height: 2.2rem;
 	font-size: 2rem;
+	font-weight: bold;
 }
 
 .t-left{
@@ -414,6 +442,7 @@ button{
 }
 
 .footer{
+	margin-top: 10rem;
 	background-color: var(--nero);
 	color: var(--bianco);
 	height: 20rem;
@@ -454,15 +483,22 @@ button{
 	gap: 3rem;
 	line-height: 2.5rem;
 }
+
 .blocco .descrizione{
-	max-width: 60rem;
+	font-size: 2rem;
+	line-height: 2.2rem;
 }
-
-
+.blocco h1{
+	line-height: 3.5rem;
+	max-width: 80%;
+}
+#gs2 .quote{
+	max-width: 95%;
+}
 .quote{
-	font-size: 3.5rem;
+	font-size: 4rem;
 	font-family: "Integral";
-	line-height: 4rem;
+	line-height: 3.5rem;
 }
 
 .cit{
@@ -486,14 +522,7 @@ button{
 	overflow: hidden;
 }
 
-.blocco#gs2{
-	height: 102.4rem;
-}
-.blocco .descrizione{
-	font-size: 2rem;
-	transform: translate(0,10%);
-	padding: 10rem 10rem 0rem 10rem;
-}
+
 .statement{
 	background-repeat: no-repeat;	
 	background-position: center;
@@ -515,9 +544,9 @@ button{
 	background-position: center;
 }
 .ear{
-	height: 55rem;
-	background-size: 60%;
-	background-repeat: no-repeat;
+	height: 80%;
+	background-size: 15%;
+	background-repeat: repeat-x;
 	background-image:	url(img/assets/getstressed/orecchio.png);
 	overflow: visible;
 	background-position: center;
@@ -559,6 +588,9 @@ video{
 	margin-bottom: 10rem;
 	margin-top: 5rem;
 }
+.map-section .descrizione{
+	max-width: 65rem;
+}
 .city-search{
 	background-image: url(img/assets/cm/r1.png);
 	height: 7rem;
@@ -584,17 +616,23 @@ select{
 	background-position: left;
 }
 .rank-section{
-	grid-template-columns: 0.1fr, 1fr, 1fr, 1fr;
+	grid-template-columns: 0.1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(11,0.1fr);
 	margin-bottom: 10rem;
 }
+.rank-section img{
+	grid-row: span 10;
 
+}
 .rank-card{
 	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 0.1fr 0.3fr;
 	padding: 0;
+	margin:0;
 }
 
 .wrap-level{
-	background-image: url(img/assets/cm/v1.png);
+	/*background-image: url(img/assets/cm/v1.png);*/
 	background-position: left top;
 	background-size: fill;
 	background-repeat: no-repeat;
@@ -602,9 +640,9 @@ select{
 }
 .wrap-level h3{
 	font-family: "Integral";
-	color: var(--bianco);
+	color: var(--rosso);
 	font-size: 2rem;
-	transform: translate(3rem, 1rem);	
+	/*transform: translate(3rem, 1rem);*/	
 }
 
 
@@ -642,7 +680,7 @@ select{
 	margin-bottom: 10rem;
 }
 .how-section .descrizione{
-	max-width: 40rem;
+	max-width: 100%;
 }
 
 .step-card{
@@ -654,19 +692,126 @@ select{
 }
 
 .buy-section{
-	grid-template-columns: 0.1fr, 1fr, 1fr, 1fr;
+	grid-template-columns: 0.1fr 1fr 1fr 1fr;
 	margin-bottom: 10rem;
 }
 .buy-section .descrizione{
 	max-height: 10rem;
 }
 
+
+.product-card{
+	border-style: solid;
+	border-color: var(--nero);
+	border-radius: 3px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: var(--bianco);
+}
+.product-card .imgBox{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	background-color: var(--nero);
+}
+.product-card .imgBox:before{
+	/* content: "Stressor Kit"; */
+	position: absolute;
+	top: 2rem;
+	left: 2.4rem;
+	color: var(--bianco);
+	font-family: 'Integral';
+	font-size: 2rem;
+	line-height: 2rem;	
+}
+.product-card .imgBox img{
+	position: relative;
+	width: 100%;
+	object-fit: fill;
+	transition: .9s linear;
+}
+
+.product-card .details{
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 2rem;
+}
+.product-card .details h2{
+	margin:0 15%;
+	padding: 0;
+	font-size: 3rem;
+	line-height: 3.2rem;
+	color: var(--rosso);
+}
+.product-card .details h2 span{
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-family: 'Integral';
+	color: var(--rosso-variant);
+}
+.product-card .details p{
+	max-width: 80%;
+	max-height: 60% ;
+	font-size: 2rem;
+	margin: 3rem 15%;
+}
+.product-card .details h3{
+	margin: 0 15%;
+	padding-top: 4rem;
+	font-size: 4rem;
+	color: var(--nero);
+	font-family: 'Integral';
+	float: left;
+}
+.product-card .details button{
+	float: right;
+	padding: 1.5rem 3rem;
+	font-size: 1.5rem;
+}
+.product-type{
+	margin-top: 2rem;
+	font-family: 'Integral';
+	line-height: 2rem;
+
+}
+.product-type span{
+	font-family: 'Montserrat';
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-right: 3rem;
+	cursor: pointer;
+}
+
+.product-type .active{
+	border-bottom-style: solid;
+	border-color: var(--rosso-variant);
+}
+/* 
 .kit-card{
-	grid-template-columns: repeat(2,1fr);
+	grid-template-columns: repeat(4,1fr);
 	padding: 0rem 5rem;
 	max-height: 80rem;
+	border-color: var(--nero);
+	border-style: solid;
+	border-width: thick;
+	border-radius: 2rem;
+	background-color: var(--nero);
 }
+.kit-card h2{
+	color: var(--bianco);
+}
+
 .kit-card .descrizione{
+	color: var(--bianco);	
 	font-weight: 900;
 	font-size: 3rem;
 	max-height: 10rem;
@@ -677,8 +822,9 @@ select{
 }
 
 .kit-card img{
-	max-width: 30%;
-}
+	max-width: 100%;
+	object-fit: cover;
+} */
 
 .bg-bocca{
 	height: 50rem;
@@ -733,7 +879,7 @@ input{
 }
 @keyframes rot-ear{
 	100%{
-		transform: rotate(10deg);
+		transform: rotate(1deg);
 	}
 }
 
@@ -745,6 +891,6 @@ input{
 
 @keyframes bocca{
 	100%{
-		transform: scale(110%);
+		transform: scale(103%);
 	}
 }

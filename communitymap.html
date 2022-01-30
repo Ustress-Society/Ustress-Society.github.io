@@ -25,48 +25,73 @@
 
 	<div class="grid map-section">
 		<h1 class="gspan-4">Community map</h1>
-		<img class= "gvspan-3 t-left" src="img/assets/cm/f.png" alt="linea">
-        <p class="descrizione gspan-3 t-left">Search in your area and find out the ranking of the most stressed companies 
+		<img class= "gvspan-3 " src="img/assets/cm/f.png" alt="linea">
+        <p class="descrizione gspan-3 ">Search in your area and find out the ranking of the most stressed companies 
             in your surroundings. <br> Enhance the competition and work better.</p>
-        <div class="city-search gspan-3 t-left">
-            <select name="City" id="city-select">
+        <div class="city-search gspan-3 ">
+            <select name="City" id="city-select" onchange= "changeMap()">
                 <option value="Milan">Milan</option>
                 <option value="New York">New York</option>
                 <option value="Tokyo">Tokyo</option>
             </select>
         </div>
-        <div class="map gspan-3 t-left">
+        <div class="map gspan-3 " id="map">
         </div>
 		
 	</div>
 	
     <div class="grid rank-section">
 		<h1 class="gspan-4" >The Ranking</h1>
-		<img class= "gvspan-5 t-left" src="img\assets\profile\Frame.png" alt="linea">
-		<div class="grid rank-card gspan-3 t-left">
+		<img src="img\assets\profile\Frame.png" alt="linea">
+		<div class="grid rank-card gspan-3 ">
 			<div class="wrap-num gspan-3 "><h2 class="number">#1</h2></div>
 			<h2 class="h2-lh-adjust">Theranos</h2>
 			<div class="gspan-2 wrap-level "><h3>Average stress level: 53</h3></div>
 		</div>
-		<div class="grid rank-card gspan-3 t-left">
+		<div class="grid rank-card gspan-3 ">
 			<div class="wrap-num gspan-3 "><h2 class="number">#2</h2></div>
 			<h2 class="h2-lh-adjust">Abstergo</h2>
 			<div class="wrap-level gspan-2  "><h3>Average stress level: 46</h3></div>
 		</div>
-        <div class="grid rank-card gspan-3 t-left">
+        <div class="grid rank-card gspan-3 ">
 			<div class="wrap-num gspan-3 "><h2 class="number">#3</h2></div>
 			<h2 class="h2-lh-adjust">Buy'n'Large</h2>
-			<div class="wrap-level gspan-2 "><h3>Average stress level: 41</h3></div>
+			<div class="wrap-level gspan-2 "><h3>Average stress level: 42</h3></div>
 		</div>
-        <div class="grid rank-card gspan-3 t-left">
+        <div class="grid rank-card gspan-3 ">
 			<div class="wrap-num gspan-3 "><h2 class="number">#4</h2></div>
 			<h2 class="h2-lh-adjust">Umbrella Corp.</h2>
-			<div class="wrap-level gspan-2 "><h3>Average stress level: 38</h3></div>
+			<div class="wrap-level gspan-2 "><h3>Average stress level: 40</h3></div>
 		</div>
-        <div class="grid rank-card gspan-3 t-left">
+        <div class="grid rank-card gspan-3 ">
 			<div class="wrap-num gspan-3 "><h2 class="number">#5</h2></div>
-			<h2 class="h2-lh-adjust">Innovative Online Industries</h2>
+			<h2 class="h2-lh-adjust">Teck Co.</h2>
+			<div class="wrap-level gspan-2 "><h3>Average stress level: 39</h3></div>
+		</div>
+		<div class="grid rank-card gspan-3 ">
+			<div class="wrap-num gspan-3 "><h2 class="number">#6</h2></div>
+			<h2 class="h2-lh-adjust">Doof Inc.</h2>
+			<div class="wrap-level gspan-2 "><h3>Average stress level: 37</h3></div>
+		</div>
+		<div class="grid rank-card gspan-3 ">
+			<div class="wrap-num gspan-3 "><h2 class="number">#7</h2></div>
+			<h2 class="h2-lh-adjust">Esse Magazine</h2>
 			<div class="wrap-level gspan-2 "><h3>Average stress level: 35</h3></div>
+		</div>
+		<div class="grid rank-card gspan-3 ">
+			<div class="wrap-num gspan-3 "><h2 class="number">#8</h2></div>
+			<h2 class="h2-lh-adjust">Castro Srl</h2>
+			<div class="wrap-level gspan-2 "><h3>Average stress level: 33</h3></div>
+		</div>
+		<div class="grid rank-card gspan-3 ">
+			<div class="wrap-num gspan-3 "><h2 class="number">#9</h2></div>
+			<h2 class="h2-lh-adjust">Selye</h2>
+			<div class="wrap-level gspan-2 "><h3>Average stress level: 31</h3></div>
+		</div>
+		<div class="grid rank-card gspan-3 ">
+			<div class="wrap-num gspan-3 "><h2 class="number">#10</h2></div>
+			<h2 class="h2-lh-adjust">Asbastos</h2>
+			<div class="wrap-level gspan-2 "><h3>Average stress level: 30</h3></div>
 		</div>
 	</div>
 
@@ -86,7 +111,7 @@
 	</div>
 
 
-
+	<script src="mapchange.js"></script>
 
 </body>
 </html>

@@ -25,14 +25,14 @@
 
     <div class="grid stress-section">
         <h1 class="gspan-4">Stressor kit</h1>
-        <p class="descrizione gspan-4 t-left">Ustress offers you an amazing experience by combining stress, productivity 
+        <p class="descrizione gspan-4 ">Ustress offers you an amazing experience by combining stress, productivity 
             and community. If you are ambitious and you want to achieve all your goals, join our elite community and buy our kit. It consists of:
         </p>
-        <div class="wrap gspan-2 t-left" style="background-image: url(img/assets/sk/v1.png);">
+        <div class="wrap gspan-2 " style="background-image: url(img/assets/sk/v1.png);">
             <h2>Tower</h2>
             <p class="descrizione">Designed with brutalist aesthetic, the tower will spread the noise all over the room thanks to its speakers.</p>
         </div>
-        <div class="wrap gspan-2 t-left" style="background-image: url(img/assets/sk/v2.png);">
+        <div class="wrap gspan-2 " style="background-image: url(img/assets/sk/v2.png);">
             <h2>Badge</h2>
             <p class="descrizione">A must-wear to show your membership, during the session it will detect the data and turn them into a stress level.</p>
         </div>
@@ -40,9 +40,8 @@
 
     <div class="grid how-section">
         <h1 class="gspan-5">How</h1>
-        <img class= "gvspan-7 t-left" src="img/assets/sk/Frame.png" alt="linea">
-        <div class="descrizione gspan-2 t-left">Ustress gives you a device that through the production of different noises, it will increase the productivity of the group during working hours. It will be similar to a personal challenge against others in order to endure noise.</div>
-        <div class="descrizione gspan-2 t-left">The data will be collected and turned into information through the online platform. In this way the user can show and share his Stress level and his membership to the Ustress community.</div>
+        <img class= "gvspan-7" src="img/assets/sk/Frame.png" alt="linea">
+        <div class="descrizione gspan-4 ">Ustress gives you a device that through the production of different noises, it will increase the productivity of the group during working hours. <br> It's a personal challenge against others in order to endure noise. <br> The data will be collected and turned into information through our online platform. <br>  In this way the user can show and share his Stress level and his membership to the Ustress community.</div>
         
         <div class="grid step-card gspan-4">
             <h2 class="gspan-4">STEP 1: THE TEAM</h2>
@@ -90,25 +89,51 @@
     </div>
 
     <div class="grid buy-section">
-        <h1 class="gspan-4">Choose your kit</h1>
-        <img class= "gvspan-3 t-left" src="img/assets/sk/Frame2.png" alt="linea">
-        <p class="descrizione t-left gspan-3">Each kit contains a Tower, 5 or 10 badges (depending which one you choose) and a user manual that explain how our device works.</p>
+         <h1 class="gspan-4">Choose your kit</h1>
+        <img class= "gvspan-3" src="img/assets/sk/Frame2.png" alt="linea">
+        
+        <div class="product-card gspan-3 gvspan-2">
+            <div class="imgBox">
+                <img id="img" src="img/assets/sk/Sito_Set5.png" alt="Stressor Kit (1 Group)">
+            </div>
+            <div class="details">
+                <h2>Stressor kit <br>
+                    <span id="group-span">5 people group</span>
+                </h2>
+                <p class="descrizione">
+                    The Stressor Kit is the top productivity boost your business needs. <br>
+                    After years of development and research we discovered that extreme noise will make you stressed, therefore, more productive. <br>
+                    You have to endure it! <br> Put your badge on and DON'T PRESS THE BUTTON!
+                </p>
+                <p class="product-type">
+                    Group size: <br>
+                    <span class="active" id="small_click" onclick="attivaSmall()">Small Group</span>
+                    <span class="" id="big_click" onclick= "attivaBig()">Big Group</span>
+                </p>
+                    <h3>$500</h3>
+                    <button class="classic">BUY NOW</button>
+                
+            </div>
+        </div>
+        
+        <!--
+            <p class="descrizione gspan-3">Each kit contains a Tower, 5 or 10 badges (depending which one you choose) and a user manual that explain how our device works.</p>
         <div class="grid kit-card gspan-3">
-            <h2 class="gspan-2">5 People kit</h2>
-            <img src="img/assets/sk/kit1.jpg" alt="kit" class=" gvspan-2">
+            <h2 class="gspan-4">5 People kit</h2>
+            <img src="img/assets/sk/kit1.jpg" alt="kit" class=" gvspan-4">
             <p class="descrizione">500$</p>
-            <button class="classic">Buy the kit</button>
+            <button class="variant">Buy the kit</button>
         </div>
         <div class="grid kit-card gspan-3">
             <h2 class="gspan-2">10 People kit</h2>
             <img src="img/assets/sk/kit1.jpg" alt="kit"  class=" gvspan-2">
             <p class="descrizione">800$</p>
             <button class="classic">Buy the kit</button>
-        </div>
+        </div> -->
     </div>
 
     <div class="container flex bg-bocca"><div class="bocca"></div></div>
-    <div class="container flex"><a href="login.html"><button class="classic">LOGIN</button></a></div>
+    <div class="container flex"><a href="profile.html"><button class="classic">YOUR PROFILE</button></a></div>
     
     <div class="footer">
 		<div class="container flex">
@@ -124,5 +149,7 @@
 			</div>
 		</div>
 	</div>
+
+    <script src="buycard.js"></script>
 </body>
 </html>
