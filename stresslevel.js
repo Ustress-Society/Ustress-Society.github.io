@@ -18,7 +18,7 @@ var sounds = {
     src: ['./sounds/letitsno.mp3']
   }),
   joinshort: new Howl({
-    src: ['./sounds/joinshort.mp3']
+    src: ['./sounds/join.mp3']
   }),
 }
 
@@ -106,7 +106,7 @@ socket.on('stress', (message) => {
         }
         else{
           console.log("BG cambiato");
-          document.getElementById(String(i)).style.backgroundImage = "url('img/assets/profile/texture/Texture_Livello12.png')";
+          document.getElementById(String(i)).style.backgroundImage = "url('img/assets/profile/texture/Texture_Livello14.png')";
         }
 
         i=i+1;

@@ -663,6 +663,21 @@ select{
 	height: 40rem;
 	background-repeat: no-repeat;
 }
+.stress-section #v1{
+	background-image: url(img/assets/sk/v1_0.png);
+	transition: 0.4s;
+}
+.stress-section #v1:hover{
+	background-image: url(img/assets/sk/v1_60.png);
+}
+
+.stress-section #v2{
+	background-image: url(img/assets/sk/v2_0.png);
+	transition: 0.4s;
+}
+.stress-section #v2:hover{
+	background-image: url(img/assets/sk/v2_60.png);
+}
 
 .wrap h2{
 	color: var(--bianco);

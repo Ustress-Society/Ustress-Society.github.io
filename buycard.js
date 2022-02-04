@@ -5,6 +5,7 @@ var small_span = document.querySelector('#small_click');
 var big_span = document.querySelector('#big_click'); 
 var group_span = document.querySelector('#group-span'); 
 var img = document.querySelector('#img'); 
+var prezzo = document.querySelector('#prezzo');
 
 function attivaSmall(){
     if(isActive==1){
@@ -13,7 +14,7 @@ function attivaSmall(){
         big_span.className = "";
         group_span.innerHTML = "5 people group";
         img.src = "img/assets/sk/Sito_Set5.png";
-
+        prezzo.innerHTML = "500$";
         isActive = 0;
     }
 }
@@ -24,7 +25,8 @@ function attivaBig(){
         big_span.className = "active";
         group_span.innerHTML = "10 people group";
         img.src = "img/assets/sk/Sito_Set10_corretto.png";
-
+        prezzo.innerHTML = "800$";
         isActive = 1;
     }
 }
+
