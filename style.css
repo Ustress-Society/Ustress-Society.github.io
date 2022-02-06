@@ -104,6 +104,7 @@
 }
 
 body{
+	overflow-x: hidden;
 	min-width: 500px;
 	font-family: Montserrat, sans-serif;
 	color: var(--nero);
@@ -115,6 +116,7 @@ body{
 	background-color: var(--bianco);
 	background-image: url(img/texture-30.png);
 	background-repeat: repeat;	
+	
 }
 .index{
 	overflow-y: hidden;
@@ -498,7 +500,7 @@ button{
 .quote{
 	font-size: 4rem;
 	font-family: "Integral";
-	line-height: 3.5rem;
+	line-height: 4rem;
 }
 
 .cit{
@@ -510,7 +512,7 @@ button{
 	height: 45rem;
 	background-repeat: no-repeat;
 	background-image:	url(img/assets/getstressed/r-uomini.png);
-	background-size: 100vw;
+	background-size: 100%;
 	overflow: visible;
 	margin-bottom: 5rem;
 }
@@ -518,7 +520,7 @@ button{
 	height: 100%;
 	background-repeat: no-repeat;
 	background-image:	url(img/assets/getstressed/uomini.png);
-	background-size: 100vw;
+	background-size: 100%;
 	overflow: hidden;
 }
 
